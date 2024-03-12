@@ -1,0 +1,5 @@
+@mixin media($query) {
+  @if $query == MobileScreens {
+    @media (max-width: 750px) { @content; }
+  }
+}
