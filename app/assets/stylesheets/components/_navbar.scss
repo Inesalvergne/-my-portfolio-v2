@@ -1,12 +1,22 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-l;
+  padding: $space-xxl;
+  border-bottom: 1px solid $dark-green;
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+  li {
+    color: $dark-green;
+    font-family: $headers-font;
+    letter-spacing: 1.5px;
+    transition: border-bottom 0.15s ease-in;
+    padding-bottom: 2px;
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+    &:hover {
+      font-weight: 500;
+      border-bottom: 3px solid $dark-green;
+    }
+  }
 }
