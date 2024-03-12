@@ -10,13 +10,20 @@
   li {
     color: $dark-green;
     font-family: $headers-font;
-    letter-spacing: 1.5px;
-    transition: border-bottom 0.15s ease-in;
+    letter-spacing: 1px;
     padding-bottom: 2px;
+    transition: border-bottom 0.15s ease-in;
+    transition: letter-spacing 0.15s ease-in;
 
     &:hover {
+      letter-spacing: 1.2px;
       font-weight: 500;
       border-bottom: 3px solid $dark-green;
     }
+  }
+
+  img {
+    width: 35px;
+    margin-right: $space-l;
   }
 }

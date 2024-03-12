@@ -1,5 +1,15 @@
-<div class="flex justify-center items-center py-5">
+<div class="">
+
+<div class="d-none">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
 <ul class="navbar">
+  <li>
+    <%= link_to root_path do %>
+      <%= image_tag 'IA.png', alt: "logo ines alvergne" %>
+    <% end %>
+  </li>
   <li><p>ABOUT ME</p></li>
   <li> <%= render 'shared/svg/dot' %></li>
   <li><p>MY SERVICES</p></li>
