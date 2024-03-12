@@ -1,0 +1,30 @@
+h1,h2,h3 {
+  font-family: $headers-font;
+  margin-bottom: $space-m;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 500;
+  color: $dark-green;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.flex-display {
+  display: flex;
+  gap: $space-s;
+
+  @include media(MobileScreens) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
