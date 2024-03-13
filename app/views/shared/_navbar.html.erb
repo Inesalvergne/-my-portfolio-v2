@@ -1,0 +1,41 @@
+<div class="navbar" data-controller="mobile-navbar">
+  <div class="hamburger d-none">
+    <%= link_to root_path, id: 'logo' do %>
+        <%= image_tag 'IA.png', alt: "logo ines alvergne", width: 35 %>
+      <% end %>
+    <i  class="fa-solid fa-bars fa-2x"
+        data-action="click->mobile-navbar#reveal"></i>
+  </div>
+
+  <ul class="desktop-menu">
+    <li>
+      <%= link_to root_path do %>
+        <%= image_tag 'IA.png', alt: "logo ines alvergne" %>
+      <% end %>
+    </li>
+    <li><p>ABOUT ME</p></li>
+    <li> <%= render 'shared/svg/dot' %></li>
+    <li><p>MY SERVICES</p></li>
+    <li><%= render 'shared/svg/dot' %></li>
+    <li><p>WEB DEVELOPMENT</p></li>
+    <li><%= render 'shared/svg/dot' %></li>
+    <li><p>MARKETING</p></li>
+    <li><%= render 'shared/svg/dot' %></li>
+    <li><p>GET IN TOUCH</p></li>
+  </ul>
+
+  <div  class="mobile-menu d-none"
+        data-mobile-navbar-target="mobileMenu">
+    <ul class="menu-items">
+      <li>
+        <i  class="fa-solid fa-xmark fa-2x"
+            data-action="click->mobile-navbar#hide"></i>
+      </li>
+      <li><p>ABOUT ME</p></li>
+      <li><p>MY SERVICES</p></li>
+      <li><p>WEB DEVELOPMENT</p></li>
+      <li><p>MARKETING</p></li>
+      <li><p>GET IN TOUCH</p></li>
+    </ul>
+  </div>
+</div>

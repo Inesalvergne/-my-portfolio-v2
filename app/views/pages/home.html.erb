@@ -1,9 +1,15 @@
-<div class="background-green-gradient">
-  <div class="container-presentation">
-    <%= image_tag "profile_picture.png", alt: "profile picture of ines alvergne" %>
-    <div>
-      <h1>Hi, I'm Ines.</h1>
-      <h2><%= @tagline %></h2>
+<div class="container-presentation">
+  <%= image_tag "profile_picture.png", alt: "profile picture of ines alvergne", class: 'profile-picture' %>
+  <div>
+    <% if @available %>
+      <div class="tag tag--available">
+        <%= image_tag 'available_dot.png', alt: "green dot", width: 20, height: 20 %>
+        <p>Available</p>
+      </div>
+    <% end %>
+    <h1>Hi, I'm Ines.</h1>
+    <h2><%= @tagline %></h2>
+    <div class="text-spacing">
       <div class="flex-display">
         <p>📍 Currently based in France & Spain</p>
         <p>🇫🇷 🇬🇧 🇪🇸 Trilingual</p>

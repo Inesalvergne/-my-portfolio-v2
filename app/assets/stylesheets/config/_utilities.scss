@@ -28,3 +28,13 @@ p {
     gap: 0;
   }
 }
+
+.d-none {
+  display: none;
+}
+
+.text-spacing {
+  p {
+    margin-bottom: $space-l;
+  }
+}

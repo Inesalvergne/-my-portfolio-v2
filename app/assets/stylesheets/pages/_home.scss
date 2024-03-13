@@ -2,27 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 40px);
   gap: $space-xxxl;
-
-  img {
-    width: 350px;
-    @include media(MobileScreens) {
-      width: 250px;
-    }
-  }
 
   h2 {
     margin-bottom: $space-xxl;
   }
 
-  p {
-    margin-bottom: $space-l;
-  }
-
   @include media(MobileScreens) {
     flex-direction: column;
     align-items: start;
+    justify-content: start;
     padding: $space-l;
+  }
+}
+
+.profile-picture {
+  width: 350px;
+  @include media(MobileScreens) {
+    width: 250px;
   }
 }
