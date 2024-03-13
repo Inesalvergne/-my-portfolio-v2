@@ -32,3 +32,9 @@ p {
 .d-none {
   display: none;
 }
+
+.text-spacing {
+  p {
+    margin-bottom: $space-l;
+  }
+}

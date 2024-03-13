@@ -4,5 +4,6 @@ class PagesController < ApplicationController
 
   def home
     @tagline = @ines.tagline
+    @available = @ines.available
   end
 end
