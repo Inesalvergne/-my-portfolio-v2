@@ -11,6 +11,7 @@
     margin-bottom: $space-l;
 
     img {
+      z-index: -1;
       transform: scale(1);
       animation: pulse 1.5s linear infinite;
     }
