@@ -1,6 +1,7 @@
 h1,h2,h3 {
   font-family: $headers-font;
   margin-bottom: $space-m;
+  line-height: 40px;
 }
 
 h1 {
@@ -12,6 +13,12 @@ h1 {
 h2 {
   font-size: 34px;
   font-weight: 400;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: $dark-green;
 }
 
 p {
@@ -37,4 +44,33 @@ p {
   p {
     margin-bottom: $space-l;
   }
+}
+
+.main-container {
+  height: calc(100vh - 40px);
+  padding: $space-xxl 200px;
+
+  @include media(MobileScreens) {
+    padding: $space-l;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-title {
+  margin-bottom: $space-xxl;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.text-small {
+  font-size: 15px;
 }

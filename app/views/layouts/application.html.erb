@@ -12,6 +12,8 @@
 
   <body class=<%="background-green-gradient" if @display_background_green_gradient %>>
     <%= render "shared/navbar" %>
-    <%= yield %>
+    <div class="main-container">
+      <%= yield %>
+    </div>
   </body>
 </html>

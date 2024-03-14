@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   def set_user
-    @ines = User.first
+    @me = User.first
   end
 
   def display_background_green_gradient
