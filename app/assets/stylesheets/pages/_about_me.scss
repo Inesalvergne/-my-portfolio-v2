@@ -1,0 +1,10 @@
+.container-experiences {
+  @include flex-jcenter-astart;
+  gap: $space-huge;
+  margin-top: $space-xxl;
+}
+
+.item-experience {
+  @include flex-jbetween-acenter;
+  margin-bottom: $space-m;
+}

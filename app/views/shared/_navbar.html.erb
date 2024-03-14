@@ -13,15 +13,15 @@
         <%= image_tag 'IA.png', alt: "logo ines alvergne" %>
       <% end %>
     </li>
-    <li><p>ABOUT ME</p></li>
-    <li> <%= render 'shared/svg/dot' %></li>
-    <li><p>MY SERVICES</p></li>
+    <li><%= link_to 'ABOUT ME', about_me_path %></p></li>
     <li><%= render 'shared/svg/dot' %></li>
-    <li><p>WEB DEVELOPMENT</p></li>
+    <li><%= link_to 'MY SERVICES', about_me_path %></li>
     <li><%= render 'shared/svg/dot' %></li>
-    <li><p>MARKETING</p></li>
+    <li><%= link_to 'WEB DEVELOPMENT', about_me_path %></li>
     <li><%= render 'shared/svg/dot' %></li>
-    <li><p>GET IN TOUCH</p></li>
+    <li><%= link_to 'MARKETING', about_me_path %></li>
+    <li><%= render 'shared/svg/dot' %></li>
+    <li><%= link_to 'GET IN TOUCH', about_me_path %></li>
   </ul>
 
   <div  class="mobile-menu d-none"
@@ -31,11 +31,11 @@
         <i  class="fa-solid fa-xmark fa-2x"
             data-action="click->mobile-navbar#hide"></i>
       </li>
-      <li><p>ABOUT ME</p></li>
-      <li><p>MY SERVICES</p></li>
-      <li><p>WEB DEVELOPMENT</p></li>
-      <li><p>MARKETING</p></li>
-      <li><p>GET IN TOUCH</p></li>
+    <li><%= link_to 'ABOUT ME', about_me_path %></p></li>
+    <li><%= link_to 'MY SERVICES', about_me_path %></li>
+    <li><%= link_to 'WEB DEVELOPMENT', about_me_path %></li>
+    <li><%= link_to 'MARKETING', about_me_path %></li>
+    <li><%= link_to 'GET IN TOUCH', about_me_path %></li>
     </ul>
   </div>
 </div>

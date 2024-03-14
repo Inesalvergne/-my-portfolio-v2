@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   before_action :display_background_green_gradient, only: [:home]
 
   def home
-    @tagline = @ines.tagline
-    @available = @ines.available
+    @tagline = @me.tagline
+    @available = @me.available
   end
 end

@@ -10,9 +10,10 @@
   }
 }
 
-.navbar li {
+.navbar a {
   color: $dark-green;
   font-family: $headers-font;
+  font-size: 18px;
   letter-spacing: 1px;
   padding-bottom: 2px;
   transition: border-bottom 0.15s ease-in;
@@ -25,11 +26,7 @@
   }
 
   @include media(MobileScreens) {
-    padding-bottom: $space-xl;
-
-    p {
-      font-size: 22px;
-    }
+    font-size: 22px;
 
     &:hover {
       border-bottom: none;
@@ -82,5 +79,10 @@
 
   .menu-items {
     padding: 40px $space-l;
+  }
+
+  li {
+    padding-bottom: $space-xl;
+    color: $dark-green;
   }
 }
