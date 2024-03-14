@@ -2,6 +2,11 @@
   @include flex-jcenter-astart;
   gap: $space-huge;
   margin-top: $space-xxl;
+
+  @include media (MobileScreens) {
+    @include flex-col;
+    gap: $space-xxl;
+  }
 }
 
 .item-experience {

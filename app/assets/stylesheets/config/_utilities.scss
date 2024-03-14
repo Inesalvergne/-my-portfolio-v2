@@ -24,6 +24,10 @@ h3 {
 p {
   font-size: 18px;
   line-height: 24px;
+
+  @include media (MobileScreens) {
+    font-size: 14px;
+  }
 }
 
 .flex-display {
@@ -73,4 +77,10 @@ p {
 
 .text-small {
   font-size: 15px;
+}
+
+.mobile-full-width {
+  @include media (MobileScreens) {
+    width: 100%;
+  }
 }
