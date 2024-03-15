@@ -1,0 +1,11 @@
+.form-container {
+  border: solid 1px $light-gray;
+  border-radius: $border-radius;
+  box-shadow: $shadow-light;
+  padding: $space-l;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
