@@ -1,8 +1,8 @@
 <div class="form-container">
   <%= simple_form_for @service do |f| %>
     <%= f.input :name %>
-    <%= f.input :description %>
-    <%= f.association :tags %>
+    <%= f.input :description, as: :text %>
+    <%= f.association :tags, collection: Tag.all %>
     <%= f.submit "Add a new service", class: "button button--primary" %>
   <% end %>
 </div>

@@ -1,7 +1,7 @@
 <div class="navbar-top" data-controller="mobile-navbar">
   <div class="hamburger d-none">
     <%= link_to root_path, id: 'logo' do %>
-        <%= image_tag 'IA.png', alt: "logo ines alvergne", width: 35 %>
+        <%= image_tag 'logo_light.png', alt: "logo ines alvergne", width: 35 %>
       <% end %>
     <i  class="fa-solid fa-bars fa-2x"
         data-action="click->mobile-navbar#reveal"></i>
@@ -10,12 +10,12 @@
   <ul class="desktop-menu">
     <li>
       <%= link_to root_path do %>
-        <%= image_tag 'IA.png', alt: "logo ines alvergne" %>
+        <%= image_tag 'logo_light.png', alt: "logo ines alvergne", width: 50 %>
       <% end %>
     </li>
     <li><%= link_to 'ABOUT ME', about_me_path %></p></li>
     <li><%= render 'shared/svg/dot' %></li>
-    <li><%= link_to 'MY SERVICES', about_me_path %></li>
+    <li><%= link_to 'MY SERVICES', services_path %></li>
     <li><%= render 'shared/svg/dot' %></li>
     <li><%= link_to 'WEB DEVELOPMENT', about_me_path %></li>
     <li><%= render 'shared/svg/dot' %></li>

@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   devise_for :users, :skip => [:registrations]
   root to: "pages#home"
   resource :users, only: %i[show], path: '/about-me', as: "about_me"
-  resources :services, only: %i[index new create update delete]
+  resources :services, only: %i[index]
 end

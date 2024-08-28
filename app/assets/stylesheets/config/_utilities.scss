@@ -24,6 +24,7 @@ h3 {
 p {
   font-size: 18px;
   line-height: 24px;
+  color: $dark-gray;
 
   @include media (MobileScreens) {
     font-size: 14px;
@@ -61,10 +62,6 @@ p {
 
 .text-center {
   text-align: center;
-}
-
-.main-title {
-  margin-bottom: $space-xxl;
 }
 
 .text-light {
