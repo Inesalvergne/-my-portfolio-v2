@@ -23,4 +23,15 @@
     align-items: center;
   }
 
+  &:hover {
+    img.horizontal-shake {
+      animation: horizontal-shaking 0.50s infinite;
+    }
+
+    img.gentle-tilt-move-shake {
+      animation-name: tilt-n-move-shaking;
+      animation-duration: 0.4s;
+      animation-iteration-count: 3;
+    }
+  }
 }
