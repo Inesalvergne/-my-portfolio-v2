@@ -1,4 +1,4 @@
-.navbar {
+.navbar-top {
   @include media(MobileScreens) {
     .desktop-menu {
       display: none;
@@ -10,7 +10,7 @@
   }
 }
 
-.navbar a {
+.navbar-top a {
   color: $dark-green;
   font-family: $headers-font;
   font-size: 18px;

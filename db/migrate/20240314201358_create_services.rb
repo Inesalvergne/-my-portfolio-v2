@@ -1,9 +1,9 @@
 class CreateServices < ActiveRecord::Migration[7.0]
   def change
     create_table :services do |t|
-      t.string :name
+      t.string :title
       t.string :description
-      t.references :tags, null: false, foreign_key: true
+      t.string :illustration
 
       t.timestamps
     end

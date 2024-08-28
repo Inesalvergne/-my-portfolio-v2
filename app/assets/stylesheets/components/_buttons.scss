@@ -1,0 +1,11 @@
+.button {
+  border-radius: $border-radius;
+  padding: $space-s $space-m;
+  width: fit-content;
+  border: none;
+
+  &--primary {
+    color: white;
+    background-color: $dark-green;
+  }
+}
