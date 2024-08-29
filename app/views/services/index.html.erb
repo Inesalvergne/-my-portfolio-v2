@@ -5,7 +5,7 @@
   <p>You can hire me as a solo dev or I can join your team for the following services.</p>
 </div>
 
-<div class="grid-cards">
+<div class="grid-cards column-3">
   <% @services.each do |service| %>
     <div class="service-card">
       <div class="container-illustration">
@@ -15,4 +15,54 @@
       <p><%= service.description %></p>
     </div>
   <% end %>
+</div>
+
+<div class="container-header">
+  <h2>What people say about my work</h2>
+</div>
+
+<div class="grid-cards column-2">
+  <div class="testimonial-card">
+    <h3>A lot of strong skills</h3>
+
+    <div class="testimonial">
+      <p>"Having worked with Ines for a few years, I can say that she has a lot of strong skills:</p>
+      <ul>
+        <li>Very good at design; has a critical eye for colour schemes, UI, UX; is very efficient with Figma</li>
+        <li>Great at front-end implementation</li>
+        <li>Very good in back-end logic and implementation</li>
+      </ul>
+      <p>I would gladly recommend Ines 👌🏻"</p>
+    </div>
+
+    <div class="person">
+      <div class="avatar">
+        <span class="initials">SL</span>
+      </div>
+      <div class="person-info">
+        <p class="text-dark-gray">Stéphane Lafontaine</p>
+        <p>Web Developer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <h3>There's nothing she can't do</h3>
+
+    <div class="testimonial">
+      <p>"Ines is a real pleasure to work with. Always relevant and motivated, she allowed us to double our velocity. </p>
+      <p>A strong UI/UX designer, she helped us greatly improve the visual aspect of the platform. And yet, it was on the back-end that she shipped the most.</p>
+      <p>Put simply, there's nothing she can't do."</p>
+    </div>
+
+    <div class="person">
+      <div class="avatar">
+        <span class="initials">GI</span>
+      </div>
+      <div class="person-info">
+        <p class="text-dark-gray">Gabriel Ibanez</p>
+        <p>CTO at Wally</p>
+      </div>
+    </div>
+  </div>
 </div>

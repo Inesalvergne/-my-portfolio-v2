@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 400;
 }
 
@@ -21,7 +21,7 @@ h3 {
   color: $dark-green;
 }
 
-p {
+p, li {
   font-size: 18px;
   line-height: 24px;
   color: $dark-gray;
@@ -74,6 +74,10 @@ p {
 
 .text-small {
   font-size: 15px;
+}
+
+.text-dark-gray {
+  color: $darker-gray;
 }
 
 .mobile-full-width {
