@@ -3,6 +3,7 @@
   margin-bottom: $space-xxl;
 
   h1 {
-    margin-bottom: $space-xxl;
+    width: fit-content;
+    margin: 0 auto $space-xxl auto;
   }
 }
