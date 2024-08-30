@@ -1,11 +1,14 @@
+.light-card {
+  border: 1px solid $light-green;
+  padding: $space-l;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-light;
+}
+
 // SERVICE CARD
 .service-card {
   width: 400px;
   height: 250px;
-  padding: $space-l;
-  border: 1px solid $light-green;
-  box-shadow: $shadow-light;
-  border-radius: $border-radius-lg;
 
   h2 {
     font-size: 18px;
@@ -37,10 +40,8 @@
 
 // TESTIMONIAL CARD
 .testimonial-card {
-  border: 1px solid $light-green;
-  padding: $space-l;
-  border-radius: $border-radius-lg;
-  width: 450px;
+  @include flex-col-jb;
+  width: 400px;
   height: 400px;
 
   ul {
@@ -51,7 +52,7 @@
     margin-left: $space-l;
   }
 
-  .person {
+  .footer {
     @include flex-as;
     gap: $space-m;
     margin-top: $space-l;

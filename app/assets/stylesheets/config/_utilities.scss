@@ -51,15 +51,6 @@ p, li {
   }
 }
 
-.main-container {
-  height: calc(100vh - 40px);
-  padding: $space-xxl 200px;
-
-  @include media(MobileScreens) {
-    padding: $space-l;
-  }
-}
-
 .text-center {
   text-align: center;
 }

@@ -1,0 +1,26 @@
+.main-container {
+  height: calc(100vh - 40px);
+  padding: $space-xxl $space-m;
+
+  @include media(LargeScreensAndUp) {
+    padding: $space-xxl 200px;
+  }
+
+  @include media(MobileScreens) {
+    padding: $space-l;
+  }
+}
+
+.container-header {
+  text-align: center;
+  margin-bottom: $space-xxl;
+
+  h1 {
+    width: fit-content;
+    margin: 0 auto $space-xxl auto;
+  }
+
+  h2 {
+    margin: $space-xxl 0;
+  }
+}
