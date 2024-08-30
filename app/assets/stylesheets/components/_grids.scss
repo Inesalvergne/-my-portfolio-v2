@@ -1,6 +1,13 @@
 .grid-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   row-gap: $space-l;
   justify-items: center;
+
+  &.column-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &.column-2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -1,10 +1,14 @@
+.light-card {
+  border: 1px solid $light-green;
+  padding: $space-l;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-light;
+}
+
+// SERVICE CARD
 .service-card {
   width: 400px;
   height: 250px;
-  padding: $space-l;
-  border: 1px solid $light-green;
-  box-shadow: $shadow-light;
-  border-radius: $border-radius-lg;
 
   h2 {
     font-size: 18px;
@@ -31,5 +35,26 @@
       animation-duration: 0.4s;
       animation-iteration-count: 2;
     }
+  }
+}
+
+// TESTIMONIAL CARD
+.testimonial-card {
+  @include flex-col-jb;
+  width: 400px;
+  height: 400px;
+
+  ul {
+    list-style: circle;
+  }
+
+  li {
+    margin-left: $space-l;
+  }
+
+  .footer {
+    @include flex-as;
+    gap: $space-m;
+    margin-top: $space-l;
   }
 }

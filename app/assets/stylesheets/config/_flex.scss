@@ -31,6 +31,10 @@
   display: flex;
   align-items: flex-end;
 }
+@mixin flex-as {
+  display: flex;
+  align-items: flex-start;
+}
 
 @mixin flex-ac-je {
   display: flex;

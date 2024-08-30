@@ -3,6 +3,7 @@ import { annotate } from "rough-notation";
 
 export default class extends Controller {
 
+
   connect() {
     const options = { type: "underline",
                       color: "#009486",

@@ -1,0 +1,37 @@
+.container-carousel-cards {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+
+  @include media(LargeScreensAndUp) {
+    width: 90%;
+  }
+}
+
+.swiper-cards {
+  .swiper-slide{
+    margin-right: $space-m;
+  }
+  .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    opacity: 0.6;
+  }
+
+  .swiper-slide-active {
+    background-color: lighten($light-green, 10%);
+  }
+}
+
+.navigation-buttons {
+  height: 200px;
+  cursor: pointer;
+  color: $dark-green;
+  display: flex;
+  gap: $space-m;
+  justify-content: center;
+  margin-top: $space-xl;
+}

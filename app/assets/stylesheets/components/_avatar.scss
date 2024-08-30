@@ -1,0 +1,11 @@
+$circle-size: 40px;
+
+.avatar {
+  @include flex-center;
+
+  background-color: $dark-green;
+  border-radius: 50%;
+  height: $circle-size;
+  width: $circle-size;
+  color: white;
+}

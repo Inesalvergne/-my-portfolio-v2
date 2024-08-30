@@ -1,13 +1,17 @@
 <div class="container-header">
-  <h1 data-controller="annotate-title">Let's kickstart or upscale your project</h1>
+  <h1>
+    <span data-controller="annotate-title">
+      Let's kickstart or upscale your project
+    </span>
+  </h1>
 
   <p>Whether your want to start from scratch or add new features to your project, I'm here to help.</p>
   <p>You can hire me as a solo dev or I can join your team for the following services.</p>
 </div>
 
-<div class="grid-cards">
+<div class="grid-cards column-3">
   <% @services.each do |service| %>
-    <div class="service-card">
+    <div class="light-card service-card">
       <div class="container-illustration">
         <%= image_tag service.illustration, alt: "shape direction", class: "gentle-tilt-move-shake" %>
       </div>
@@ -16,3 +20,5 @@
     </div>
   <% end %>
 </div>
+
+<%= render 'testimonials' %>

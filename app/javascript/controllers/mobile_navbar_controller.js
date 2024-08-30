@@ -4,9 +4,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
 
   static targets = ['mobileMenu']
-  connect() {
-    console.log('hellooo');
-  }
 
   reveal() {
     this.mobileMenuTarget.classList.remove('d-none')
