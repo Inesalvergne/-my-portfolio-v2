@@ -1,6 +1,6 @@
-.main-container {
+.container-main {
   height: calc(100vh - 40px);
-  padding: $space-xxl $space-m;
+  padding: 0 $space-m;
 
   @include media(LargeScreensAndUp) {
     padding: $space-xxl 200px;
@@ -11,16 +11,7 @@
   }
 }
 
-.container-header {
+.container-subtitle {
   text-align: center;
-  margin-bottom: $space-xxl;
-
-  h1 {
-    position: relative;
-    margin: 0 auto $space-xxl auto;
-  }
-
-  h2 {
-    margin: $space-xxl 0;
-  }
+  margin: $space-xxl;
 }

@@ -1,6 +1,23 @@
 .navbar-top {
+  background-color: $dark-green;
+
   .burger {
     display: none;
+  }
+
+  &.light {
+    background-color: transparent;
+    color: $dark-green;
+
+    .nav-item {
+      color: $dark-green;
+
+      &:hover {
+        border-top: 3px solid $dark-green;
+        color: lighten($color: $dark-green, $amount: 0.5)
+
+      }
+    }
   }
 
   @include media(TabletScreens) {
@@ -10,30 +27,6 @@
 
     .burger {
       display: flex;
-    }
-  }
-}
-
-.navbar-top a {
-  color: $dark-green;
-  font-family: $headers-font;
-  font-size: 18px;
-  letter-spacing: 1px;
-  padding-bottom: 2px;
-  transition: border-bottom 0.15s ease-in;
-  transition: letter-spacing 0.15s ease-in;
-
-  &:hover {
-    letter-spacing: 1.2px;
-    font-weight: 500;
-    border-bottom: 3px solid $dark-green;
-  }
-
-  @include media(MobileScreens) {
-    font-size: 22px;
-
-    &:hover {
-      border-bottom: none;
     }
   }
 }
@@ -50,5 +43,23 @@
   img {
     width: 35px;
     margin-right: $space-l;
+  }
+
+  .nav-item {
+    color: white;
+    font-family: $headers-font;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: $space-s;
+    margin-right: $space-xl;
+    transition: border-bottom 0.15s ease-in;
+    transition: letter-spacing 0.15s ease-in;
+
+    &:hover, &.active {
+      letter-spacing: 1.1px;
+      font-weight: 500;
+      border-top: 2px solid $light-green;
+      color: $light-green;
+    }
   }
 }

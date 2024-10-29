@@ -1,0 +1,17 @@
+.container-header {
+  text-align: center;
+  background-color: $dark-green;
+  padding: $space-xxxl $space-huge;
+
+  p { color: $light-green; }
+
+  h1 {
+    color: white;
+    position: relative;
+    margin: 0 auto $space-xxl auto;
+  }
+
+  h2 {
+    margin: $space-xxl 0;
+  }
+}
