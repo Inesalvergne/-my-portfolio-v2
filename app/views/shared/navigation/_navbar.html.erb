@@ -1,0 +1,13 @@
+<div class="navbar-top" data-controller="mobile-navbar">
+  <div class="burger"
+        data-mobile-navbar-target="burger">
+    <%= link_to root_path, id: 'logo' do %>
+        <%= image_tag 'logo_light.png', alt: "logo ines alvergne", width: 35 %>
+      <% end %>
+    <i  class="fa-solid fa-bars fa-2x"
+        data-action="click->mobile-navbar#reveal"></i>
+  </div>
+
+  <%= render "shared/navigation/desktop_menu" %>
+  <%= render "shared/navigation/mobile_menu" %>
+</div>

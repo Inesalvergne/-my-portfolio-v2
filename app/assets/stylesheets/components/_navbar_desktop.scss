@@ -1,10 +1,14 @@
 .navbar-top {
-  @include media(MobileScreens) {
+  .burger {
+    display: none;
+  }
+
+  @include media(TabletScreens) {
     .desktop-menu {
       display: none;
     }
 
-    .hamburger {
+    .burger {
       display: flex;
     }
   }
@@ -46,43 +50,5 @@
   img {
     width: 35px;
     margin-right: $space-l;
-  }
-}
-
-.hamburger {
-  justify-content: space-between;
-  align-items: center;
-  padding: $space-l;
-  border-bottom: 1px solid $dark-green;
-  box-shadow: $shadow-light;
-
-  #logo {
-    height: 35px;
-  }
-
-  i {
-    color: $dark-green;
-  }
-}
-
-.mobile-menu {
-  position: absolute;
-  top: -10px;
-  right: end;
-  height: fit-content;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: right;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-
-  .menu-items {
-    padding: 40px $space-l;
-  }
-
-  li {
-    padding-bottom: $space-xl;
-    color: $dark-green;
   }
 }
