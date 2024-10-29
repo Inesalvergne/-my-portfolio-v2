@@ -9,13 +9,13 @@
   <p>You can hire me as a solo dev or I can join your team for the following services.</p>
 </div>
 
-<div class="grid-cards column-3">
+<div class="grid-cards">
   <% @services.each do |service| %>
     <div class="light-card service-card">
       <div class="container-illustration">
         <%= image_tag service.illustration, alt: "shape direction", class: "gentle-tilt-move-shake" %>
       </div>
-      <h2><%= service.title %></h2>
+      <h3><%= service.title %></h3>
       <p><%= service.description %></p>
     </div>
   <% end %>
