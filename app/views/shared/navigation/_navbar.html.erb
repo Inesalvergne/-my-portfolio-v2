@@ -1,4 +1,4 @@
-<div class="navbar-top" data-controller="mobile-navbar">
+<div class="navbar-top <%= "light" if @navbar_light %>" data-controller="mobile-navbar">
   <div class="burger"
         data-mobile-navbar-target="burger">
     <%= link_to root_path, id: 'logo' do %>

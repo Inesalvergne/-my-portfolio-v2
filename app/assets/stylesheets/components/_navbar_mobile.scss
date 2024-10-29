@@ -25,12 +25,16 @@
   text-align: right;
   box-shadow: $shadow-light;
 
-  .menu-items {
+  .menu {
     padding: 40px $space-l;
   }
 
   li {
     padding-bottom: $space-xl;
+  }
+
+  .nav-item {
     color: $dark-green;
+    font-size: 22px;
   }
 }

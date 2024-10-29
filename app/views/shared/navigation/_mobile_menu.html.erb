@@ -1,14 +1,11 @@
 <div  class="mobile-menu d-none"
       data-mobile-navbar-target="mobileMenu">
-  <ul class="menu-items">
+  <ul class="menu">
     <li>
       <i  class="fa-solid fa-xmark fa-2x"
           data-action="click->mobile-navbar#hide"></i>
     </li>
-  <li><%= link_to 'ABOUT ME', about_me_path %></p></li>
-  <li><%= link_to 'MY SERVICES', services_path %></li>
-  <li><%= link_to 'WEB DEVELOPMENT', about_me_path %></li>
-  <li><%= link_to 'MARKETING', about_me_path %></li>
-  <li><%= link_to 'GET IN TOUCH', about_me_path %></li>
+
+  <%= render "shared/navigation/nav_items" %>
   </ul>
 </div>
