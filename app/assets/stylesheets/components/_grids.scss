@@ -2,12 +2,13 @@
   display: grid;
   row-gap: $space-l;
   justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 
-  &.column-3 {
-    grid-template-columns: 1fr 1fr 1fr;
+  @include media(TabletScreens) {
+    grid-template-columns: 1fr 1fr;
   }
 
-  &.column-2 {
-    grid-template-columns: 1fr 1fr;
+  @include media(MobileScreens) {
+    grid-template-columns: 1fr;
   }
 }

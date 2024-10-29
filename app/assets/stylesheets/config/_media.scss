@@ -4,6 +4,10 @@
     @media (min-width: 1600px) { @content; }
   }
 
+  @if $query == TabletScreens {
+    @media(max-width: 1050px) { @content; }
+  }
+
   @if $query == MobileScreens {
     @media (max-width: 700px) { @content; }
   }

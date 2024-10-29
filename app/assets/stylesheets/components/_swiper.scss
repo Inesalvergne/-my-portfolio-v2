@@ -6,6 +6,10 @@
   @include media(LargeScreensAndUp) {
     width: 90%;
   }
+
+  @include media(MobileScreens) {
+    overflow: visible;
+  }
 }
 
 .swiper-cards {
