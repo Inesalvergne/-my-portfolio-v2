@@ -1,10 +1,13 @@
 .container-carousel-cards {
-  width: 95%;
   margin: auto;
   overflow: hidden;
 
   @include media(LargeScreensAndUp) {
     width: 90%;
+  }
+
+  @include media(MobileScreens) {
+    overflow: visible;
   }
 }
 

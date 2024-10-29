@@ -8,6 +8,10 @@ h1 {
   font-size: 38px;
   font-weight: 500;
   color: $dark-green;
+
+  @include media(TabletScreens) {
+    font-size: 32px;
+  }
 }
 
 h2 {
@@ -20,6 +24,11 @@ h3 {
   font-weight: 600;
   font-size: 20px;
   color: $dark-green;
+
+  @include media(TabletScreens) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 p, li {
@@ -27,7 +36,7 @@ p, li {
   line-height: 24px;
   color: $dark-gray;
 
-  @include media (MobileScreens) {
+  @include media (TabletScreens) {
     font-size: 14px;
   }
 }
