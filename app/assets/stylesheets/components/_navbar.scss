@@ -1,67 +1,69 @@
 .navbar-top {
-  @include media(MobileScreens) {
+
+  .desktop-menu {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $space-l;
+    padding: $space-xxl;
+    border-bottom: 1px solid $dark-green;
+
+      img {
+        width: 35px;
+        margin-right: $space-l;
+      }
+  }
+
+  .burger {
+    display: none;
+  }
+
+  @include media(TabletScreens) {
     .desktop-menu {
       display: none;
     }
 
-    .hamburger {
+    .burger {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $space-l;
+      border-bottom: 1px solid $dark-green;
+      box-shadow: $shadow-light;
+
+      #logo {
+        height: 35px;
+      }
+
+      i {
+        color: $dark-green;
+      }
     }
   }
-}
 
-.navbar-top a {
-  color: $dark-green;
-  font-family: $headers-font;
-  font-size: 18px;
-  letter-spacing: 1px;
-  padding-bottom: 2px;
-  transition: border-bottom 0.15s ease-in;
-  transition: letter-spacing 0.15s ease-in;
-
-  &:hover {
-    letter-spacing: 1.2px;
-    font-weight: 500;
-    border-bottom: 3px solid $dark-green;
-  }
-
-  @include media(MobileScreens) {
-    font-size: 22px;
+  a {
+    color: $dark-green;
+    font-family: $headers-font;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    transition: border-bottom 0.15s ease-in;
+    transition: letter-spacing 0.15s ease-in;
 
     &:hover {
-      border-bottom: none;
+      letter-spacing: 1.2px;
+      font-weight: 500;
+      border-bottom: 3px solid $dark-green;
     }
-  }
-}
 
-.desktop-menu {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: $space-l;
-  padding: $space-xxl;
-  border-bottom: 1px solid $dark-green;
+    @include media(MobileScreens) {
+      font-size: 22px;
 
-  img {
-    width: 35px;
-    margin-right: $space-l;
-  }
-}
-
-.hamburger {
-  justify-content: space-between;
-  align-items: center;
-  padding: $space-l;
-  border-bottom: 1px solid $dark-green;
-  box-shadow: $shadow-light;
-
-  #logo {
-    height: 35px;
-  }
-
-  i {
-    color: $dark-green;
+      &:hover {
+        border-bottom: none;
+      }
+    }
   }
 }
 
