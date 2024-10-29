@@ -1,0 +1,36 @@
+.burger {
+  justify-content: space-between;
+  align-items: center;
+  padding: $space-l;
+  border-bottom: 1px solid $dark-green;
+  box-shadow: $shadow-light;
+
+  #logo {
+    height: 35px;
+  }
+
+  i {
+    color: $dark-green;
+  }
+}
+
+.mobile-menu {
+  z-index: 1;
+  position: absolute;
+  top: -10px;
+  right: end;
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+  text-align: right;
+  box-shadow: $shadow-light;
+
+  .menu-items {
+    padding: 40px $space-l;
+  }
+
+  li {
+    padding-bottom: $space-xl;
+    color: $dark-green;
+  }
+}

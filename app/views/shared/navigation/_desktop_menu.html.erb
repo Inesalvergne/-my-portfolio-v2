@@ -1,0 +1,16 @@
+<ul class="desktop-menu">
+  <li>
+    <%= link_to root_path do %>
+      <%= image_tag 'logo_light.png', alt: "logo ines alvergne", width: 50 %>
+    <% end %>
+  </li>
+  <li><%= link_to 'ABOUT ME', about_me_path %></p></li>
+  <li><%= render 'shared/svg/dot' %></li>
+  <li><%= link_to 'MY SERVICES', services_path %></li>
+  <li><%= render 'shared/svg/dot' %></li>
+  <li><%= link_to 'WEB DEVELOPMENT', about_me_path %></li>
+  <li><%= render 'shared/svg/dot' %></li>
+  <li><%= link_to 'MARKETING', about_me_path %></li>
+  <li><%= render 'shared/svg/dot' %></li>
+  <li><%= link_to 'GET IN TOUCH', about_me_path %></li>
+</ul>
